@@ -13,7 +13,7 @@ require("dotenv").config();
 const app = express();
 app.use(express.json());
 
-// config cors to backend?
+// config cors to backend? - test if this works to allow api?
 app.use(
   cors({
     origin: "https://anime-e-commerce-client.vercel.app/",
