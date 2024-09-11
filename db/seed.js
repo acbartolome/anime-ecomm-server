@@ -24,12 +24,8 @@ async function hashPassword(password) {
 async function seedData() {
   console.log("Seeding the database");
   try {
-    // clear tables
-    // add the resetDatabase function
     await resetDatabase();
 
-    // create admin accounts
-    // Do I need to add a orderHistory?/cart?
     const createAdmins = await prisma.user.createMany({
       data: [
         {
